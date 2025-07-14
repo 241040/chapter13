@@ -1,12 +1,15 @@
 public class Main {
     public static void main(String[] args) {
         Hero h = new Hero();
+        h.setName("ミナト");
 
-        //h.hp = 100;// エラーが出る
-        h.name = "ミナト";
+        King k = new King();
+        k.talk(h);
 
-        h.sleep();
-        h.seppuku();
+        Inn i = new Inn();
+        i.checkIn(h);
+
+        Matango m = new Matango();
+        h.attack(m);
     }
 }
-//13.3.2のゲッターメソッドから
